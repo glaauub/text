@@ -1,0 +1,35 @@
+/* 外贸一键建站 - 生成网站样式 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", Arial, sans-serif; background: #f5f6f8; color: #333; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.site-header { background: #1a2a3a; padding: 16px 0; }
+.logo { color: #fff; font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+.banner-slider { position: relative; width: 100%; overflow: hidden; background: #1a2a3a; }
+.slide { display: none; }
+.slide.active { display: block; }
+.slide img { width: 100%; height: 420px; object-fit: cover; display: block; }
+.banner-placeholder { height: 420px; display: flex; align-items: center; justify-content: center; color: #9fb3c8; font-size: 20px; }
+.products-section { padding: 48px 0; }
+.section-title { text-align: center; font-size: 28px; margin-bottom: 32px; color: #1a2a3a; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+.product-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,.08); transition: transform .2s, box-shadow .2s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.14); }
+.product-img { height: 220px; background: #eee; }
+.product-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.product-body { padding: 16px; }
+.product-name { font-size: 17px; margin-bottom: 6px; }
+.product-price { color: #e67e22; font-size: 22px; font-weight: 700; }
+.product-spec { color: #888; font-size: 13px; margin-top: 4px; }
+.empty-tip { text-align: center; color: #999; padding: 40px 0; }
+.contact-section { background: #1a2a3a; padding: 48px 0; }
+.contact-section .section-title { color: #fff; }
+.contact-list { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+.contact-btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #1a2a3a; text-decoration: none; padding: 12px 24px; border-radius: 40px; font-size: 15px; font-weight: 600; box-shadow: 0 3px 10px rgba(0,0,0,.2); transition: background .2s; cursor: pointer; }
+.contact-btn:hover { background: #e67e22; color: #fff; }
+.contact-icon { font-size: 18px; }
+.site-footer { background: #101a26; color: #7f8fa3; text-align: center; padding: 18px 0; font-size: 13px; }
+@media (max-width: 768px) {
+  .slide img, .banner-placeholder { height: 220px; }
+  .product-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .product-img { height: 150px; }
+}
